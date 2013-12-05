@@ -2,6 +2,8 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -24,7 +26,7 @@ html, body {
 
 /* Space out content a bit */
 body {
-    background-color: #83b1eb;
+    background-color: #63a5e8;
     color: white;
 }
 
@@ -39,13 +41,13 @@ body {
 
 .btn-default {
     color: white;
-    background-color: #2376c9;
-    border: none;
+    background-color: #257fda;
+    border: 1px solid #1d68b4;
 }
 .btn-default:hover {
-    background-color: #0f4f8f;
+    background-color: #216fbd;
     color: white !important;
-    border: none;
+    border: 1px solid #1d68b4;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -75,7 +77,7 @@ body {
         color: white;
     }
     a:hover {
-        color: #2376c9;
+        color: #257fda;
     }
 }
 
@@ -130,7 +132,7 @@ body {
         color: white;
     }
     a:hover {
-        color: #2376c9;
+        color: #257fda;
     }
 }
 
@@ -161,7 +163,7 @@ body {
 
 @media screen and (max-width: 767px) {
     .navbar-collapse {
-        background-color: #2376c9;
+        background-color: #257fda;
         margin-bottom: 1em;
     }
     .center-block {

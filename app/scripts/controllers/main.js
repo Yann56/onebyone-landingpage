@@ -5,6 +5,8 @@ angular.module('onebyoneApp')
   })
   .controller('AboutCtrl', function ($scope) {
   })
+  .controller('TeamCtrl', function ($scope) {
+  })
   .directive('headerdirective', function() {
 	  	return {
 	  		restrict: 'E',

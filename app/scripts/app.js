@@ -14,6 +14,10 @@ angular.module('onebyoneApp', [
         templateUrl: 'views/project.html',
         controller: 'ProjectCtrl'
       })
+      .when('/team', {
+        templateUrl: 'views/team.html',
+        controller: 'TeamCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -1,8 +1,12 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
+@import url(http://fonts.googleapis.com/css?family=Gudea:400,700);
+
 @import 'sass-bootstrap/lib/bootstrap';
 
+* {
 
+}
 
 .browsehappy {
     margin: 0.2em 0;
@@ -12,7 +16,11 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 }
 
 html, body {
-    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gudea', sans-serif;
+    height:100%;
+    min-height:100%;
 }
 
 .centered {
@@ -22,21 +30,30 @@ html, body {
 .call-to-action {
     text-align: center;
     padding: 1em 0;
+    .btn-warning {
+        background-color: #f26522;
+    }
+    margin: 3em 0;
 }
+
+
 
 /* Space out content a bit */
 body {
     background-color: #63a5e8;
+    // background-image: url('../images/background-full.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
     color: white;
 }
 
 .wrap {
-    min-height: 100%;
-    height: auto;
-    font-weight: 200;
-    height: auto !important;
     height: 100%;
-    margin: 0 auto -60px;
+}
+
+.btn {
+    border-radius: 0.2em;
 }
 
 .btn-default {
@@ -72,12 +89,15 @@ body {
 
 /* Custom page header */
 .header {
-    font-size: 0.85em;
+    font-size: 1em;
     a {
         color: white;
     }
     a:hover {
         color: #257fda;
+    }
+    li {
+        padding: 0 1em;
     }
 }
 
@@ -105,15 +125,15 @@ body {
 }
 
 .center-block {
-    margin-top: 3em;
+    margin-top: 5em;
     p {
         font-size: 1.2em;
     }
 
 }
 
-.about {
-    font-size: 1.2em;
+.about, .team:not(.call-to-action), .project {
+    font-size: 1.1em;
     text-align: justify;
 }
 
@@ -124,7 +144,20 @@ body {
         font-size: 3em;
     }
     h1 {
+        font-size: 2em;
         padding: 1em 0 2em 0;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p {
+        color: #516986;
+        text-align: justify;
+        padding: 1em 0;
+    }
+    margin-bottom: 2em;
+    .btn {
+        margin: 1em 0 2em 0;
     }
 }
 
@@ -132,9 +165,38 @@ body {
     text-align: center;
 }
 
-.payoff {
+.center-block p.payoff {
+    margin: 2em 0;
+    font-size: 1.35em;
+}
+
+.form-inline.center-block {
     margin: 1em 0;
 }
+
+.team.profiles{
+    text-align: center;
+    p {
+        font-size: 0.9em;
+    }
+}
+.team.profiles div {
+    margin: 2em 0;
+}
+
+.team img.member {
+    border: 0.5em solid white;
+    border-radius: 100%;
+    width: 65%;
+}
+
+.team.call-to-action {
+    font-size: 1.35em;
+}
+.team.call-to-action .btn {
+    margin: 2em 0;
+}
+
 
 /* Custom page footer */
 .footer {

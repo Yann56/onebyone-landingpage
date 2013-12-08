@@ -53,9 +53,6 @@ h1, h2, h3, h4, h5, p, .btn {
 /* Space out content a bit */
 body {
     background-color: #63a5e8;
-    // background-image: url('../images/background-full.jpg');
-    background-repeat:no-repeat;
-    background-position: center;
     background-size: cover;
     color: white;
 }
@@ -71,6 +68,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
+    background-position-x: center;
 }
 
 .btn {

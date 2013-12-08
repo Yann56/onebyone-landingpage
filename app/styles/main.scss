@@ -63,7 +63,7 @@ body {
 
 .background-image {
     height: 100%;
-    background-image: url('../images/2048x1536.jpg');
+    background-image: url('/images/background-2048x1536.jpg');
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -260,7 +260,7 @@ div.container.about {
 
 @media screen and (max-width: 480px) {
     .background-image {
-        background-image: url('../images/480x800.jpg');
+        background-image: url('/images/background-480x800.jpg');
         background-position-y: top;
         background-size: inherit;
     }
@@ -272,13 +272,13 @@ div.container.about {
 
 @media screen and (min-width: 480px) and (max-width: 1024px) {
     .background-image {
-        background-image: url('../images/1024x768.jpg');
+        background-image: url('/images/background-1024x768.jpg');
         background-size: inherit;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
     .background-image {
-        background-image: url('../images/1280x800.jpg');
+        background-image: url('/images/background-1280x800.jpg');
     }
 }
 @media screen and (max-width: 767px) {

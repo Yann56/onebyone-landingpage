@@ -261,6 +261,8 @@ div.container.about {
 @media screen and (max-width: 480px) {
     .background-image {
         background-image: url('../images/480x800.jpg');
+        background-position-y: top;
+        background-size: inherit;
     }
     .logo.big {
         width: 230px;
@@ -268,12 +270,13 @@ div.container.about {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 480px) and (max-width: 1024px) {
     .background-image {
         background-image: url('../images/1024x768.jpg');
+        background-size: inherit;
     }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
     .background-image {
         background-image: url('../images/1280x800.jpg');
     }

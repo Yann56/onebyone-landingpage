@@ -36,6 +36,12 @@ html, body {
     margin: 3em 0;
 }
 
+h1, h2, h3, h4, h5, p, .btn {
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+.solutions *, .footer.inverted *{
+    text-shadow: none;
+}
 
 
 /* Space out content a bit */
@@ -50,6 +56,15 @@ body {
 
 .wrap {
     height: 100%;
+}
+
+.background-image {
+    height: 100%;
+    background-image: url('../images/2048x1536.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
 }
 
 .btn {
@@ -76,7 +91,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -133,13 +147,17 @@ body {
 }
 
 .about, .team:not(.call-to-action), .project {
-    font-size: 1.1em;
     text-align: justify;
+}
+
+div.container.about {
+    min-height: 100%;
 }
 
 .solutions {
     background-color: white;
     color: #324863;
+    padding-bottom: 3em;
     .glyphicon {
         font-size: 3em;
     }
@@ -155,7 +173,6 @@ body {
         text-align: justify;
         padding: 1em 0;
     }
-    margin-bottom: 2em;
     .btn {
         margin: 1em 0 2em 0;
     }
@@ -166,12 +183,13 @@ body {
 }
 
 .center-block p.payoff {
+    text-shadow: 0.1em 0.1em 0.2em black;
     margin: 2em 0;
     font-size: 1.35em;
 }
 
 .form-inline.center-block {
-    margin: 1em 0;
+    margin: 1em 0 2em 0;
 }
 
 .team.profiles{
@@ -200,17 +218,20 @@ body {
 
 /* Custom page footer */
 .footer {
-
     // min-height: 2em;
     height: 40px;
     font-size: 0.75em;
-    padding-top: 19px;
     a {
         color: white;
     }
     a:hover {
         color: #257fda;
     }
+}
+
+.footer.inverted {
+    color: #516986;;
+    background-color: white;
 }
 
 .container-narrow > hr {
@@ -231,13 +252,25 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .background-image {
+        background-image: url('../images/480x800.jpg');
+    }
     .logo.big {
         width: 230px;
         height: 107px;
     }
 }
 
-
+@media screen and (max-width: 1024px) {
+    .background-image {
+        background-image: url('../images/1024x768.jpg');
+    }
+}
+@media screen and (max-width: 1280px) {
+    .background-image {
+        background-image: url('../images/1280x800.jpg');
+    }
+}
 @media screen and (max-width: 767px) {
     .navbar-collapse {
         background-color: #257fda;

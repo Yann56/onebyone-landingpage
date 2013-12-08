@@ -2,7 +2,10 @@
 
 angular.module('onebyoneApp', [
   'ngResource',
-  'ngRoute'
+  'ngRoute',
+  'angulartics',
+  'angulartics.google.analytics',
+  'angulartics.scroll'
 ])
   .config(function ($routeProvider) {
     $routeProvider

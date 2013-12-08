@@ -3,7 +3,7 @@
 angular.module('onebyoneApp')
   .controller('MainCtrl', function ($scope) {
   })
-  .controller('AboutCtrl', function ($scope) {
+  .controller('ProjectCtrl', function ($scope) {
   })
   .controller('TeamCtrl', function ($scope) {
   })
